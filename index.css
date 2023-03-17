@@ -36,6 +36,9 @@
     }
   }
 /*above snipped from bootstrap*/
+.buttonContainer {
+  text-align: center;
+}
 
 .lesson1 {
     text-align: center;
