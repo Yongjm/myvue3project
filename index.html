@@ -9,16 +9,27 @@
     </head>
     <body>
         <div class="container buttonContainer"><button><a href="http://127.0.0.1:3000/" target="_blank">Back to homepage</a></button></div>
+        
+        <div id="appLesson1"></div>
+
+        <script type="module">
+        import Lesson1 from '/myvue3project/src/js/lesson1.js';
+        Vue.createApp(Lesson1).mount('#appLesson1');
+        </script>
+        <!--
         <div class="container lesson1">     
-            <p>Lesson 1</p>       
+            <p>Lesson 1</p>     
+            
             <div id="app">        
                 <input type="text" v-model="greeting" />
                 
                 <p>
                     {{ greeting }} ({{ greeting.length }})
-                </p>
+                </p>                
             </div>
         </div>
+        -->
+        <script src="/myvue3project/src/js/lesson1.js"></script>
 
         <div class="container lesson2">
             <p>lesson 2</p>
@@ -72,16 +83,12 @@
                         {{ assignments }}
                     </pre>
                     -->                    
-                </section>
-
-                <div class="container lesson 4">
-
-                </div>
-
-            </div>            
+                </section>                
+            </div>         
         </div>
     
         <script>
+            /*
             //lesson1
             Vue.createApp ({
                 data() {
@@ -96,7 +103,8 @@
                         this.greeting = "changed";
                     }, 1000);
                 }
-            }).mount("#app");            
+            }).mount("#app");  
+            */
         </script>
 
         <script>
@@ -141,10 +149,5 @@
             };
             Vue.createApp(app).mount("#appLesson3")
         </script>
-
-        <script>
-            //lesson 3
-        </script>
-
     </body>
 </html>
